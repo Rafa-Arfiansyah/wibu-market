@@ -1,0 +1,92 @@
+:root {
+    --primary-color: #0d6efd;
+    --dark-color: #212529;
+    --light-color: #f8f9fa;
+    --transition: all 0.3s ease;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+/* Hero */
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../images/banner.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    padding-top: 76px;
+}
+.hero-content {
+    text-align: center;
+    color: white;
+}
+/* Cards Hover Effect */
+.card {
+    transition: var(--transition);
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+/* Product Card Image */
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+/* Rating Stars */
+.rating {
+    color: #ffc107;
+}
+/* Back to Top Button */
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    z-index: 99;
+}
+/* Social Media Icons */
+.social-icons a {
+    transition: var(--transition);
+}
+.social-icons a:hover {
+    color: var(--primary-color) !important;
+    transform: translateY(-3px);
+}
+/* Form Controls */
+.form-control:focus {
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+/* Custom Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.fade-in-up {
+    animation: fadeInUp 0.5s ease-out;
+}
+/* Responsive */
+@media (max-width: 992px) {
+    .hero-section {
+        height: 70vh;
+    }
+}
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+}
+@media (max-width: 576px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+}

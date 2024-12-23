@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bulpis Tshirt - Kaos Keren Kekinian</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom styles -->
+    <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">Bulpis Tshirt</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#produk">Produk</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tentang">Tentang</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#kontak">Kontak</a>
+                    </li>
+                    <li class="nav-item ms-2">
+                        <a class="btn btn-primary" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">
+                            <i class="bi bi-person-fill"></i> Login
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ini Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-content text-center">
+                <h1 class="display-3 fw-bold text-white mb-4">Bulpis Tshirt</h1>
+                <p class="lead text-white mb-4">Temukan koleksi kaos premium yang bikin penampilanmu makin kece</p>
+                <a href="#produk" class="btn btn-primary btn-lg px-5">
+                    <i class="bi bi-arrow-right-circle me-2"></i>Lihat Koleksi
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ini fitur -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-truck display-4 text-primary mb-3"></i>
+                            <h5 class="card-title">Gratis Ongkir</h5>
+                            <p class="card-text">Nikmati gratis ongkir untuk setiap pembelian di seluruh Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-shield-check display-4 text-primary mb-3"></i>
+                            <h5 class="card-title">Kualitas Premium</h5>
+                            <p class="card-text">Bahan berkualitas tinggi dengan jahitan yang rapi dan nyaman dipakai</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card border-0 shadow-sm h-100">
+                        <div class="card-body text-center p-4">
+                            <i class="bi bi-arrow-repeat display-4 text-primary mb-3"></i>
+                            <h5 class="card-title">Garansi 30 Hari</h5>
+                            <p class="card-text">Jaminan pengembalian barang dalam 30 hari jika ada masalah</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product -->
+    <section id="produk" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Produk Terbaru</h2>
+            
+            <!-- Filter Buttons -->
+            <div class="d-flex justify-content-center mb-4">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-outline-primary active">Semua</button>
+                    <button type="button" class="btn btn-outline-primary">Pria</button>
+                    <button type="button" class="btn btn-outline-primary">Wanita</button>
+                    <button type="button" class="btn btn-outline-primary">Limited Edition</button>
+                </div>
+            </div>
+
+            <div class="row g-4">
+                <!-- Product Card 1 -->
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <div class="position-relative">
+                            <img src="src/images/product1.jpeg" class="card-img-top" alt="Product 1">
+                            <span class="position-absolute top-0 start-0 badge bg-danger m-2">New</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Basic Bokuto TSHIRT</h5>
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <p class="text-primary fw-bold mb-0">Rp 149.000</p>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary w-100">
+                                <i class="bi bi-cart-plus me-2"></i>Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <div class="position-relative">
+                            <img src="src/images/product2.jpeg" class="card-img-top" alt="Product 2">
+                            <span class="position-absolute top-0 start-0 badge bg-success m-2">Sale</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Premium Uruha Rushia TSHIRT</h5>
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <p class="text-primary fw-bold mb-0">Rp 179.000</p>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary w-100">
+                                <i class="bi bi-cart-plus me-2"></i>Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <img src="src/images/product3.jpeg" class="card-img-top" alt="Product 3">
+                        <div class="card-body">
+                            <h5 class="card-title">DANDANDAN Anime TSHIRT</h5>
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <p class="text-primary fw-bold mb-0">Rp 199.000</p>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary w-100">
+                                <i class="bi bi-cart-plus me-2"></i>Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <img src="src/images/product4.jpeg" class="card-img-top" alt="Product 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Cute anime Girl TSHIRT</h5>
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <p class="text-primary fw-bold mb-0">Rp 249.000</p>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary w-100">
+                                <i class="bi bi-cart-plus me-2"></i>Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <div class="position-relative">
+                            <img src="src/images/product1.jpeg" class="card-img-top" alt="Product 1">
+                            <span class="position-absolute top-0 start-0 badge bg-danger m-2">New</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Basic Bokuto TSHIRT</h5>
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <p class="text-primary fw-bold mb-0">Rp 149.000</p>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary w-100">
+                                <i class="bi bi-cart-plus me-2"></i>Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 2 -->
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <div class="position-relative">
+                            <img src="src/images/product2.jpeg" class="card-img-top" alt="Product 2">
+                            <span class="position-absolute top-0 start-0 badge bg-success m-2">Sale</span>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">Premium Uruha Rushia TSHIRT</h5>
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <p class="text-primary fw-bold mb-0">Rp 179.000</p>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star text-warning"></i>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary w-100">
+                                <i class="bi bi-cart-plus me-2"></i>Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 3 -->
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <img src="src/images/product3.jpeg" class="card-img-top" alt="Product 3">
+                        <div class="card-body">
+                            <h5 class="card-title">DANDANDAN Anime TSHIRT</h5>
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <p class="text-primary fw-bold mb-0">Rp 199.000</p>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary w-100">
+                                <i class="bi bi-cart-plus me-2"></i>Add to Cart
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product Card 4 -->
+                <div class="col-md-3">
+                    <div class="card h-100">
+                        <img src="src/images/product4.jpeg" class="card-img-top" alt="Product 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Cute anime Girl TSHIRT</h5>
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <p class="text-primary fw-bold mb-0">Rp 249.000</p>
+                                <div class="rating">
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                    <i class="bi bi-star-half text-warning"></i>
+                                </div>
+                            </div>
+                            <button class="btn btn-primary w-100">
+                                <i class="bi bi-cart-plus me-2"></i>Add to Cart
+                            </button>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="tentang" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="src/images/shincan.gif" class="img-fluid rounded shadow" alt="About Us">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="mb-4">Tentang Bulpis Tshirt</h2>
+                    <p class="lead">Kami adalah brand lokal yang fokus pada kualitas dan kenyamanan.</p>
+                    <div class="accordion" id="aboutAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne">
+                                    Visi Kami
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#aboutAccordion">
+                                <div class="accordion-body">
+                                    Menjadi brand fashion wibu terkemuka yang mengutamakan kualitas dan kepuasan pelanggan.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo">
+                                    Kualitas Bahan
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#aboutAccordion">
+                                <div class="accordion-body">
+                                    Menggunakan bahan premium Cotton Combed 30s dengan jahitan yang rapi dan nyaman.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontak" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h2 class="text-center mb-4">Hubungi Kami</h2>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="text" class="form-control" id="name" placeholder="Nama">
+                                    <label for="name">Nama</label>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-floating">
+                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                                    <label for="email">Email</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <select class="form-select" id="subject">
+                                        <option selected>Pilih Topik</option>
+                                        <option value="1">Produk</option>
+                                        <option value="2">Pengiriman</option>
+                                        <option value="3">Lainnya</option>
+                                    </select>
+                                    <label for="subject">Topik</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="form-floating">
+                                    <textarea class="form-control" id="message" style="height: 150px" placeholder="Pesan"></textarea>
+                                    <label for="message">Pesan</label>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Kirim Pesan</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-light py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <h5 class="mb-4">Bupis Tshirt</h5>
+                <p class="mb-4">Kaos wibu premium berkualitas dengan design kekinian untuk gaya fashion sehari-hari.</p>
+                <div class="d-flex gap-3">
+                    <a href="#" class="text-light fs-5"><i class="bi bi-facebook"></i></a>
+                    <a href="#" class="text-light fs-5"><i class="bi bi-instagram"></i></a>
+                    <a href="#" class="text-light fs-5"><i class="bi bi-twitter-x"></i></a>
+                    <a href="#" class="text-light fs-5"><i class="bi bi-youtube"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-2">
+                <h5 class="mb-4">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-2"><a href="#home" class="text-light text-decoration-none">Beranda</a></li>
+                    <li class="mb-2"><a href="#produk" class="text-light text-decoration-none">Produk</a></li>
+                    <li class="mb-2"><a href="#tentang" class="text-light text-decoration-none">Tentang</a></li>
+                    <li class="mb-2"><a href="#kontak" class="text-light text-decoration-none">Kontak</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h5 class="mb-4">Kontak Info</h5>
+                <ul class="list-unstyled">
+                    <li class="mb-3">
+                        <i class="bi bi-geo-alt me-2"></i>
+                        Jl. Raden Ronggo No. - , Prenggan, Kec.Kotagede,  Yogyakarta
+                    </li>
+                    <li class="mb-3">
+                        <i class="bi bi-telephone me-2"></i>
+                        +62 857 848 283 03
+                    </li>
+                    <li class="mb-3">
+                        <i class="bi bi-envelope me-2"></i>
+                        info@bulpistshirt.com
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <h5 class="mb-4">Newsletter</h5>
+                <p class="mb-4">Dapatkan info terbaru dan diskon menarik</p>
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" placeholder="Email address">
+                    <button class="btn btn-primary" type="button">Subscribe</button>
+                </div>
+            </div>
+        </div>
+        <hr class="my-4">
+        <div class="row">
+            <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
+                <p class="mb-0">&copy; 2024 Bulpis Tshirt. All rights reserved.</p>
+            </div>
+            <div class="col-md-6 text-center text-md-end">
+                <a href="#" class="text-light text-decoration-none me-3">Privacy Policy</a>
+                <a href="#" class="text-light text-decoration-none me-3">Terms & Conditions</a>
+                <a href="#" class="text-light text-decoration-none">FAQs</a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Login</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="loginEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="loginEmail">
+                    </div>
+                    <div class="mb-3">
+                        <label for="loginPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="loginPassword">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">Remember me</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Login</button>
+                </form>
+                <div class="text-center mt-3">
+                    <p class="mb-0">Belum punya akun? <a href="#" data-bs-toggle="modal" data-bs-target="#registerModal">Daftar</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Register Modal -->
+<div class="modal fade" id="registerModal" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Register</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="registerName" class="form-label">Nama Lengkap</label>
+                        <input type="text" class="form-control" id="registerName">
+                    </div>
+                    <div class="mb-3">
+                        <label for="registerEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="registerEmail">
+                    </div>
+                    <div class="mb-3">
+                        <label for="registerPassword" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="registerPassword">
+                    </div>
+                    <div class="mb-3">
+                        <label for="registerConfirmPassword" class="form-label">Konfirmasi Password</label>
+                        <input type="password" class="form-control" id="registerConfirmPassword">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="agreeTerms">
+                        <label class="form-check-label" for="agreeTerms">Saya setuju dengan syarat dan ketentuan</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Register</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Back to Top Button -->
+<button type="button" class="btn btn-primary btn-floating btn-lg" id="btn-back-to-top">
+    <i class="bi bi-arrow-up"></i>
+</button>
+
+<!-- Bootstrap Bundle -->
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Custom script -->
+<script src="src/js/script.js"></script>
+</body>
+</html>
